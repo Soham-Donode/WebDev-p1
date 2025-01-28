@@ -1,0 +1,68 @@
+/* Services section */
+
+.services-heading h2 {
+  color: #fea116;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.services-heading h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services-heading span {
+  color : #fea116 ; 
+}
+
+.rooms-text {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cards-row1 {
+  display:flex; 
+  justify-content:center ;
+  gap:30px; 
+  margin-bottom : 20px ; 
+}
+.cards-row1 div ,
+.cards-row2 div{
+  border:none; 
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  height: 40vh ; 
+  width: 25vw ; 
+  align-content: center;
+  padding :20px;
+}
+.cards-row1 div p ,
+.cards-row2 div p{
+  margin-top:10px; 
+}
+
+.cards-row2 {
+  display:flex; 
+  justify-content:center ;
+  gap : 30px ; 
+}
+
+
+.services-cards {
+  padding: 30px ;
+  text-align:center; 
+}
+.cards-row1 div i , .cards-row2 div i {
+  color:#fea116; 
+  font-size:50px ; 
+  padding-bottom:9px ; 
+  
+}
+
+.cards-row1  :hover , .cards-row2  :hover{
+  background-color: #fea116; 
+  color:white;
+  i {
+    color:white; 
+  }
+}
+
+

@@ -1,0 +1,501 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-Screen Body */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #191c2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px; /* Fixed height for navbar */
+}
+
+.logo {
+  color: #fea116;
+  font-size: 30px;
+}
+
+/* Navigation Links */
+.navlinks ul {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.navlinks li {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Background Container */
+.background-container {
+  background-image: url("images/carousel-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h1 {
+  color: white;
+  font-size: 3rem;
+  max-width: 90%; /* More responsive */
+}
+
+/* Buttons */
+.our-rooms,
+.book-room {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.our-rooms {
+  background-color: #fea116;
+  color: white;
+}
+
+.book-room {
+  background-color: #f1f8ff;
+  color: black;
+}
+
+/* Slideshow */
+.slideshow {
+  display: flex;
+  gap: 5px; /* Fixed typo: gap-5px -> gap: 5px */
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: -40px;
+}
+
+.slideshow div {
+  width: 80%;
+  max-width: 250px;
+  text-align: center;
+  margin: 0;
+}
+
+.slideshow div select,
+.slideshow div input {
+  width: 65%;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.slideshow button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fea116;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+/* About Us Section */
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.about-us-flex {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.about-us-info h2 {
+  color: #fea116;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-us-info h1 {
+  font-size: 2.5rem;
+}
+
+.about-us-info p {
+  margin-top: 20px;
+  color: #616161;
+  font-size: 1.2rem;
+}
+
+.boxes {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.boxes div {
+  flex: 1;
+  height: 150px;
+  border: 1px solid #969696;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.boxes div p {
+  margin: 5px 0;
+}
+
+.number {
+  font-weight: bold;
+}
+
+i {
+  color: #fea116;
+  font-size: 2rem;
+}
+
+.Explore button {
+  background-color: #fea116;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+
+.about-us-image {
+  width: 40%;
+  padding: 20px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 🔹 RESPONSIVE MEDIA QUERIES */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navlinks ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .background-container {
+    height: 80vh; /* Prevents cutting off content */
+  }
+
+  .overlay h1 {
+    font-size: 2rem; /* Smaller text for small screens */
+  }
+
+  .slideshow {
+    flex-direction: column;
+    padding: 10px;
+    top: 0;
+  }
+
+  .slideshow div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-flex {
+    width: 100%;
+  }
+
+  .about-us-image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .background-container {
+    height: 75vh; /* Adjusted for small screens */
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .our-rooms,
+  .book-room {
+    width: 90%; /* Makes buttons full width on small screens */
+  }
+
+  .slideshow {
+    flex-direction: column;
+    top: 0;
+    padding: 10px;
+  }
+
+  .slideshow button {
+    width: 100%;
+  }
+}
+
+/* Rooms Section */
+
+.rooms-text h2 {
+  color: #fea116;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.rooms-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.rooms-text span {
+  color : #fea116 ; 
+}
+
+.services-heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.roompage {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.roompage div {
+  height: auto; /* Make height flexible */
+  width: 25%; /* Default width for larger screens */
+  box-shadow: 1px 1px 10px 1px #969696;
+  padding-bottom: 5px;
+  margin-bottom: 20px; /* Add spacing between cards */
+}
+
+.roompage div img {
+  width: 100%;
+  height: 90%; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area */
+}
+
+.roompage div button {
+  background-color: #fea116;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px; /* Smaller padding for smaller screens */
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  width: calc(100% - 20px); /* Full width minus margin */
+}
+
+/* 🔹 RESPONSIVE MEDIA QUERIES */
+@media (max-width: 900px) {
+  .roompage div {
+    width: 45%; /* Two cards per row on medium screens */
+  }
+
+  .roompage div img {
+    height: 90%; /* Smaller image height */
+  }
+
+  .roompage div button {
+    padding: 8px 16px; /* Smaller button padding */
+  }
+}
+
+@media (max-width: 600px) {
+  .roompage {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center;
+    gap: 20px; /* Add spacing between stacked cards */
+  }
+
+  .roompage div {
+    width: 80%; /* Full width for small screens */
+  }
+
+  .roompage div img {
+    height: 90%; /* Restore image height for better visibility */
+  }
+
+  .roompage div button {
+    padding: 10px 20px; /* Restore button padding */
+  }
+}
+/* .videobox{
+  height:60vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top: 20px;
+  padding:0px 20px;
+}
+.videoboxtext{
+  height:100%;
+  width:50%;
+  color:white;
+  padding:0 20px;
+  align-content:center;
+  background-color: rgb(15, 23, 43);
+  
+}
+.videoboxtext p{
+  margin:10px 0;
+  font-size: 1.25em;
+}
+.videoboxtext h1{
+  margin:10px 0;
+  font-size: 1.5rem;
+}
+.videoplay{
+  height:100%;
+  width:50%;
+  
+}
+.videoplay iframe {
+  width: 100%;
+  height:100%;
+} */
+.videobox {
+  height: 60vh; /* Adjust height dynamically */
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  justify-content: center; /* Centers items */
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  /* gap: 20px; /* Adds spacing between elements */ 
+}
+
+.videoboxtext {
+  flex: 1; /* Allows flexible resizing */
+  min-width: 300px; /* Prevents excessive shrinking */
+  max-width: 50%;
+  height:100%;/* Prevents excessive expansion */
+  color: white;
+  padding: 20px;
+  text-align: center; /* Centers text for better readability */
+  background-color: rgb(15, 23, 43);
+  /* border-radius: 10px; /* Adds rounded corners */ 
+}
+
+.videoboxtext p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.videoboxtext h1 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.videoplay {
+  flex: 1; /* Allows flexible resizing */
+  min-width: 300px; /* Ensures minimum width */
+  max-width: 50%;
+  height:100%;/* Limits maximum width */
+}
+
+.videoplay iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 250px; /* Ensures minimum height */
+  /* border-radius: 10px; /* Adds rounded corners */ 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .videobox {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: center;
+    text-align: center;
+    gap:2px;
+    height:120vh;
+    
+  }
+
+  .videoboxtext, .videoplay {
+    width: 100%;
+    
+  
+  }
+
+  .videoplay iframe {
+    height: 100%; /* Set a specific height for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .videoboxtext h1 {
+    font-size: 1.2rem;
+  }
+
+  .videoboxtext p {
+    font-size: 1rem;
+  }
+
+  .videoplay iframe {
+    height: 200px;
+  }
+}
