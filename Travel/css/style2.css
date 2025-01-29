@@ -54,15 +54,19 @@
   color:#fea116; 
   font-size:50px ; 
   padding-bottom:9px ; 
-  
-}
+} 
 
 .cards-row1  :hover , .cards-row2  :hover{
+  transition: ease-out 0.3s;
   background-color: #fea116; 
+  
   color:white;
   i {
     color:white; 
   }
 }
 
-
+.Footercontainer {
+  background-color: rgb(15, 23, 43);
+  height: 60vh;
+}
