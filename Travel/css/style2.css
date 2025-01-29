@@ -68,5 +68,39 @@
 
 .Footercontainer {
   background-color: rgb(15, 23, 43);
-  height: 60vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%; 
+  color: white;
+}
+.logobox {
+  height: 60%;
+  width: 25%;
+  background-color: #fea116;
+  border-radius: 4px;
+  padding: 25px; 
+}
+
+.logobox span {
+  color:black; 
+  font-weight: bold;
+}
+
+.logobox h1 {
+  margin-bottom: 10px ;
+}
+
+
+.logobox p {
+   font-size: 2.5vh;
+}
+
+.companylist ul li {
+  line-height: 30px;
+}
+
+.serviceslist ul li {
+  line-height: 30px;
 }
