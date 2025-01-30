@@ -234,10 +234,11 @@ i {
   transition: opacity 0.4s , translate 0.4s;
 }
 .Explore button:hover {
-  opacity: 0.9;
+  opacity: 0.9; 
   translate: 0 -2px;
   cursor: pointer;
 }
+
 .about-us-image {
   width: 40%;
   padding: 20px;
@@ -368,12 +369,20 @@ i {
   background-color: #fea116;
   color: white;
   font-weight: bold;
-  padding: 10px 20px; /* Smaller padding for smaller screens */
+  padding: 10px 20px; 
   border: none;
   border-radius: 5px;
   margin: 10px;
-  width: calc(100% - 20px); /* Full width minus margin */
+  width: calc(100% - 20px); 
+  transition: translate 0.4s, opacity0.4s;
 }
+
+.roompage div button:hover {
+  opacity: 0.9;
+  translate: 0 -2px;
+  cursor: pointer;
+}
+
 
 /* 🔹 RESPONSIVE MEDIA QUERIES */
 @media (max-width: 900px) {

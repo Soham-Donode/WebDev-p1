@@ -33,6 +33,7 @@
   width: 25vw ; 
   align-content: center;
   padding :20px;
+  border-radius: 5px;
 }
 .cards-row1 div p ,
 .cards-row2 div p{
@@ -58,6 +59,7 @@
 
 .cards-row1  :hover , .cards-row2  :hover{
   transition: ease-out 0.3s;
+  border-radius: 20px;
   background-color: #fea116; 
   
   color:white;
