@@ -104,3 +104,13 @@
 .serviceslist ul li {
   line-height: 30px;
 }
+
+.serviceslist ul li:hover , .companylist ul li:hover {
+  color: #fea116;
+  cursor: pointer;
+}
+
+.contactlist {
+  line-height: 30px;
+  vertical-align: top;
+}

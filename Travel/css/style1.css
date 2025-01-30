@@ -1,4 +1,4 @@
-/* Global Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +6,14 @@
   font-family: Arial, sans-serif;
 }
 
-/* Full-Screen Body */
+
 body {
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
-/* Navbar */
+
 .navbar {
   background-color: #191c2e;
   display: flex;
@@ -33,14 +33,20 @@ body {
   display: flex;
   gap: 25px;
   list-style-type: none;
+  margin: 20px;
 }
 
 .navlinks li {
   font-size: 1.5rem;
   color: white;
+  transition: color 0.4s;
+}
+.navlinks li:hover {
+  cursor: pointer;
+  color: #fea116;
 }
 
-/* Background Container */
+
 .background-container {
   background-image: url(../images/carousel-1.png) ; 
   background-size: cover;
@@ -72,13 +78,12 @@ body {
 .overlay h1 {
   color: white;
   font-size: 3rem;
-  max-width: 90%; /* More responsive */
+  max-width: 90%; 
 }
 .overlay p {
   color: white ; 
 }
 
-/* Buttons */
 .our-rooms,
 .book-room {
   padding: 1rem;
@@ -87,8 +92,15 @@ body {
   border-radius: 5px;
   font-weight: bold;
   margin: 10px;
+  transition: opacity 0.4s , translate 0.4s;
 }
 
+.our-rooms:hover,
+.book-room:hover {
+  opacity: 0.9;
+  translate: 0 -2px;
+  cursor: pointer;
+}
 .our-rooms {
   background-color: #fea116;
   color: white;
@@ -140,8 +152,14 @@ body {
   color: white;
   font-weight: bold;
   border: none;
+  transition: opacity 0.4s , translate 0.4s;
 }
 
+.slideshow button:hover {
+  opacity: 0.9;
+  translate: 0 -2px;
+  cursor: pointer;
+}
 /* About Us Section */
 .about-us {
   display: flex;
@@ -213,8 +231,13 @@ i {
   border: none;
   border-radius: 5px;
   margin-left: 10%;
+  transition: opacity 0.4s , translate 0.4s;
 }
-
+.Explore button:hover {
+  opacity: 0.9;
+  translate: 0 -2px;
+  cursor: pointer;
+}
 .about-us-image {
   width: 40%;
   padding: 20px;
